@@ -56,3 +56,26 @@ http_archive(
     strip_prefix = "parallel-hashmap-1.31",
     urls = ["https://github.com/greg7mdp/parallel-hashmap/archive/1.31.tar.gz"],
 )
+
+# Github gFlags
+http_archive(
+    name = "com_github_gflags_gflags",
+    sha256 = "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf",
+    strip_prefix = "gflags-2.2.2",
+    urls = [
+        "https://github.com/gflags/gflags/archive/v2.2.2.tar.gz",
+    ],
+)
+
+# Google glog C++ logging library
+# http://rpg.ifi.uzh.ch/docs/glog.html
+# Example Usage: #include "glog/logging.h"
+# Example dependency: "@com_google_glog//:glog"
+http_archive(
+    name = "com_google_glog",
+    sha256 = "f28359aeba12f30d73d9e4711ef356dc842886968112162bc73002645139c39c",
+    strip_prefix = "glog-0.4.0",
+    urls = [
+        "https://github.com/google/glog/archive/v0.4.0.tar.gz",
+    ],
+)

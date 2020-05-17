@@ -14,3 +14,11 @@ cc_binary(
         "@parallel_hashmap",
     ],
 )
+
+cc_binary(
+    name = "glog_main",
+    srcs = ["glog_main.cc"],
+    deps = [
+        "@com_google_glog//:glog",
+    ],
+)
