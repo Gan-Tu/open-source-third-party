@@ -5,3 +5,12 @@ cc_binary(
     srcs = ["leveldb_main.cc"],
     deps = ["@com_google_leveldb//:leveldb"],
 )
+
+cc_binary(
+    name = "parallel_hashmap_main",
+    srcs = ["parallel_hashmap_main.cc"],
+    deps = [
+        "@com_google_absl//absl/synchronization",
+        "@parallel_hashmap",
+    ],
+)
