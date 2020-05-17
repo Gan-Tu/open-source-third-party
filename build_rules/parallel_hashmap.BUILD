@@ -45,7 +45,6 @@ cc_library(
     ),
     defines = [
     ],
-    includes = ["include"],
     linkopts = [
         "-Wno-dev",
         "-pthread",
