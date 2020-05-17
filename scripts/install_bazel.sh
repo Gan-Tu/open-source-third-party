@@ -1,5 +1,3 @@
-export BAZEL_VERSION=3.1.0
-
 # Download Linux installation script
 curl -fsSLO https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh
 if [[ $? != 0 ]]; then
