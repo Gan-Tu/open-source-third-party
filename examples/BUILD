@@ -27,5 +27,15 @@ cc_binary(
     name = "ini_reader_main",
     srcs = ["ini_reader_main.cc"],
     data = ["data/test.config"],
-    deps = ["@inih//:inih"],
+    deps = ["@inih"],
+)
+
+cc_binary(
+    name = "yaml_main",
+    srcs = ["yaml_main.cc"],
+    data = ["data/test.yaml"],
+    deps = [
+        "@com_google_glog//:glog",
+        "@yaml_cpp//:yaml-cpp",
+    ],
 )

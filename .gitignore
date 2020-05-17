@@ -36,3 +36,6 @@ bazel-*
 
 # MacOS
 .DS_Store
+
+# Vistual Studio Code
+.vscode

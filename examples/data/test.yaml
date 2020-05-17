@@ -1,0 +1,11 @@
+bool: true
+integer: 1
+pi: 3.1415926
+hello: world
+items:
+  - item 1
+  - item 2
+  - item 3
+maps:
+  key: value
+  key2: value2

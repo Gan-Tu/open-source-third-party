@@ -88,3 +88,13 @@ http_archive(
     strip_prefix = "inih-r49",
     urls = ["https://github.com/benhoyt/inih/archive/r49.tar.gz"],
 )
+
+# YAML Parser
+# https://github.com/jbeder/yaml-cpp
+http_archive(
+    name = "yaml_cpp",
+    build_file = "//build_rules:yaml_cpp.BUILD",
+    sha256 = "77ea1b90b3718aa0c324207cb29418f5bced2354c2e483a9523d98c3460af1ed",
+    strip_prefix = "yaml-cpp-yaml-cpp-0.6.3",
+    urls = ["https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-0.6.3.tar.gz"],
+)
