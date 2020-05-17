@@ -1,6 +1,6 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-# Abseil
+# Google Abseil C++ Library
 http_archive(
     name = "com_google_absl",
     sha256 = "f41868f7a938605c92936230081175d1eae87f6ea2c248f41077c8f88316f111",
@@ -26,3 +26,13 @@ load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_
 rules_proto_dependencies()
 
 rules_proto_toolchains()
+
+# GoogleTest
+http_archive(
+    name = "com_google_test",
+    sha256 = "9dc9157a9a1551ec7a7e43daea9a694a0bb5fb8bec81235d8a1e6ef64c716dcb",
+    strip_prefix = "googletest-release-1.10.0",
+    urls = [
+        "https://github.com/google/googletest/archive/release-1.10.0.tar.gz",
+    ],
+)

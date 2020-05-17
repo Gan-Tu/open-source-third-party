@@ -1,4 +1,4 @@
-load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library", "cc_proto_library")
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library", "cc_proto_library", "cc_test")
 load("@rules_proto//proto:defs.bzl", "proto_library")
 
 proto_library(
@@ -26,5 +26,15 @@ cc_binary(
     srcs = ["hello_main.cc"],
     deps = [
         ":hello",
+    ],
+)
+
+cc_test(
+    name = "hello_test",
+    srcs = ["hello_test.cc"],
+    deps = [
+        ":hello",
+        "@com_google_test//:gtest",
+        "@com_google_test//:gtest_main",
     ],
 )
