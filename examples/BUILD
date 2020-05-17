@@ -22,3 +22,10 @@ cc_binary(
         "@com_google_glog//:glog",
     ],
 )
+
+cc_binary(
+    name = "ini_reader_main",
+    srcs = ["ini_reader_main.cc"],
+    data = ["data/test.config"],
+    deps = ["@inih//:inih"],
+)

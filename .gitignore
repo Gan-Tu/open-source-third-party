@@ -33,3 +33,6 @@
 
 # Bazel
 bazel-*
+
+# MacOS
+.DS_Store

@@ -79,3 +79,12 @@ http_archive(
         "https://github.com/google/glog/archive/v0.4.0.tar.gz",
     ],
 )
+
+# Init config file reader
+http_archive(
+    name = "inih",
+    build_file = "//build_rules:inih.BUILD",
+    sha256 = "197133c37a5fce2a3ac13008883b13f3a6f349881b66024c38ee9abf45e20d0c",
+    strip_prefix = "inih-r49",
+    urls = ["https://github.com/benhoyt/inih/archive/r49.tar.gz"],
+)
