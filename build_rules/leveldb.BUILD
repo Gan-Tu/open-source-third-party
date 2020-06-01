@@ -25,6 +25,9 @@ cc_library(
     srcs = glob(
         ["**/*.cc"],
         exclude = [
+            "benchmarks/**",
+            "db/db_bench.cc",
+            "db/leveldbutil.cc",
             "doc/**",
             "**/*_test.cc",
             "util/env_windows.cc",
@@ -34,6 +37,7 @@ cc_library(
         ["**/*.h"],
         exclude = [
             "doc/**",
+            "benchmarks/**",
             "util/windows_logger.h",
             "util/env_windows*.h",
         ],
