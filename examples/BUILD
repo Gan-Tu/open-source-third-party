@@ -39,3 +39,11 @@ cc_binary(
         "@yaml_cpp//:yaml-cpp",
     ],
 )
+
+cc_binary(
+    name = "benchmark_main",
+    srcs = ["benchmark_main.cc"],
+    deps = [
+        "@com_google_benchmark//:benchmark",
+    ],
+)
